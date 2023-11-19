@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="search-result-card">
+    {{#each artists}}
+    <h5 class="result-title">
+      {{artists.name}}
+    </h5>
+    <img src="{{this.images.0.url}}" alt="artist image" />
+    <p>Genre: {{this.genres}}</p>
+    <a href="/albums/{{this.id}}">Show Albums from {{this.name}}</a> <!---schiet id door in url --->
+  </div>
+  {{/each}}
+</div>
